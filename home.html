@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Improve Page Speed</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/libs/slick-1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/libs/slick-1.8.1/slick/slick.css"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="section-one">
+        <div>
+          <h1>Img tag with srcset and sizes attributes</h1>
+        </div>
+        <div class="content-container">
+          <div class="lorem">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
+              quasi explicabo veritatis sequi facere, animi necessitatibus
+              praesentium, iste eligendi debitis accusantium esse voluptatem
+              obcaecati! Placeat distinctio laborum adipisci natus dolore!
+            </p>
+          </div>
+          <div class="image-wrapper">
+            <img
+              data-srcset="
+              /assets/5_small.jpg   500w,
+              /assets/5_medium.jpg 1000w,
+              /assets/5_large.jpg  1500w
+            "
+              sizes="auto"
+              data-src="/assets/5_small.jpg"
+              alt="img"
+              width="1500px"
+              height="1000px"
+              class="lazy-img"
+              data-load="fadeIn"
+            />
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="lorem">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
+              quasi explicabo veritatis sequi facere, animi necessitatibus
+              praesentium, iste eligendi debitis accusantium esse voluptatem
+              obcaecati! Placeat distinctio laborum adipisci natus dolore!
+            </p>
+          </div>
+          <div class="image-wrapper">
+            <img
+              data-srcset="
+              /assets/6_small.jpg   500w,
+              /assets/6_medium.jpg 1000w,
+              /assets/6_large.jpg  1500w
+            "
+              sizes="auto"
+              data-src="/assets/6_small.jpg"
+              alt="img"
+              width="1500px"
+              height="1000px"
+              class="lazy-img"
+              data-load="colour"
+            />
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="lorem">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
+              quasi explicabo veritatis sequi facere, animi necessitatibus
+              praesentium, iste eligendi debitis accusantium esse voluptatem
+              obcaecati! Placeat distinctio laborum adipisci natus dolore!
+            </p>
+          </div>
+          <div class="image-wrapper">
+            <img
+              data-srcset="
+            /assets/7_small.jpg   500w,
+            /assets/7_medium.jpg 1000w,
+            /assets/7_large.jpg  1500w
+          "
+              data-src="/assets/7_small.jpg"
+              sizes="auto"
+              alt="img"
+              width="1500px"
+              height="1000px"
+              class="lazy-img"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section-two">
+        <h1>This is a CSS background image</h1>
+        <div data-style="background-image: url('assets/8_large.jpg')"></div>
+      </section>
+    </main>
+    <script type="module" src="/app.js"></script>
+    <!-- <script type="application/javascript" src="/libs/jquery-3.6.0.js"></script>
+    <script
+      type="text/javascript"
+      src="/libs/slick-1.8.1/slick/slick.min.js"
+    ></script> -->
+  </body>
+</html>
